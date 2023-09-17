@@ -163,32 +163,33 @@ nav ul li:not(.header-nav ul li:last-child) {
 /* Section-one start */
 
 #section-one {
+    height: 70vh;
     background-color: var(--color-bg1);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 89vh;
 }
 
 #section-one h1 {
-    font-size: 3rem;
+    margin-top: 8vh;
+    font-size: 2rem;
     color: var(--color-title);
 }
 
 #section-one h2 {
-    font-size: 2.8rem;
+    font-size: 1.8rem;
     color: var(--color-title);
 }
 
 #section-one button {
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 1.5vh 4vh;
     background-color: var(--btn-background);
     color: var(--color-primary);
     border: 2px solid var(--color-primary);
-    margin-top: 20px;
+    margin-top: 40px;
     cursor: pointer;
 }
 
@@ -204,9 +205,6 @@ nav ul li:not(.header-nav ul li:last-child) {
 #section-two {
     background-color: var(--color-bg2);
     height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     text-align: center;
 }
 
@@ -216,12 +214,9 @@ nav ul li:not(.header-nav ul li:last-child) {
 }
 
 #section-two .row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    margin-top: 9vh;
-    padding-bottom: 14vh;
+    margin-top: 3vh;
+    padding-bottom: 8vh;
 }
 
 #section-two img {
@@ -231,7 +226,7 @@ nav ul li:not(.header-nav ul li:last-child) {
 }
 
 #section-two .col {
-    padding: 0 6vh;
+    padding: 4vh 0;
 }
 
 /* Section-two end */
@@ -241,33 +236,19 @@ nav ul li:not(.header-nav ul li:last-child) {
 footer {
     height: auto;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: var(--color-bg3);
     color: var(--color-text);
-    padding: 3vh 15vh;
     font-size: 0.8rem;
-}
-
-footer .copyright,
-footer .contact {
-    display: flex;
-    justify-content: end;   
-}
-
-footer .copyright {
-    width: 60%;
-    margin-right: 9vh;
-}
-
-footer .contact {
-    width: 40%;
+    padding: 2vh 0;
+    gap: 3vh;
 }
 
 footer .contact ul {
     display: flex;
-}
-
-footer .contact ul li {
-    width: 16vh;
+    gap: 3vh;
 }
 
 footer .contact ul li a {
@@ -299,5 +280,60 @@ footer .contact ul li a {
 
  nav ul li:not(.header-nav ul li:last-child){
     border-bottom: none;
+ }
+
+ #section-one {
+    height: 89vh;
+ }
+
+ #section-one h1 {
+    font-size: 3rem;
+ }
+
+ #section-one h2 {
+    font-size: 2.8rem;
+ }
+
+ #section-one button {
+    font-size: 1.5rem;
+ }
+
+ #section-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+
+ #section-two .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 9vh;
+    padding-bottom: 14vh;
+ }
+
+ #section-two .col {
+    padding: 0 6vh;
+ }
+ 
+ footer {
+    flex-direction: row-reverse;
+    gap: 0;
+    padding: 3vh 15vh;
+ }
+
+ footer .copyright,
+ footer .contact {
+    display: flex;
+    justify-content: end;   
+ }
+
+ footer .copyright {
+    width: 60%;
+    margin-right: 9vh;
+ }
+
+ footer .contact {
+    width: 40%;
  }
 }
