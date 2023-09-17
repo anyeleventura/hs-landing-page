@@ -19,13 +19,13 @@
     list-style: none;
     box-sizing: border-box;
     text-decoration: none;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     line-height: 1.5;  
 }
 
 @font-face{
     font-family: 'outline';
-    src: url(/font/KnockyOutlineSemibold.otf);
+    src: url(../font/KnockyOutlineSemibold.otf);
     font-weight: normal;
 }
 
@@ -37,7 +37,7 @@ body{
 /* Header start */
 
 header{
-    padding: 10px 7vw;    
+    padding: 1vh 7vw;    
     display: flex;
     justify-content: space-between;
     background-color: var(--color-bg3);
@@ -160,7 +160,123 @@ nav ul li:not(.header-nav ul li:last-child) {
 
 /* Header end */
 
-@media (min-width:800px) {
+/* Section-one start */
+
+#section-one {
+    background-color: var(--color-bg1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 89vh;
+}
+
+#section-one h1 {
+    font-size: 3rem;
+    color: var(--color-title);
+}
+
+#section-one h2 {
+    font-size: 2.8rem;
+    color: var(--color-title);
+}
+
+#section-one button {
+    font-size: 1.5rem;
+    padding: 1.5vh 4vh;
+    background-color: var(--btn-background);
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#section-one button:hover {
+    background-color: var(--color-bg3);
+    color: #000;
+}
+
+/* Section-one end */
+
+/* Section-two start */
+
+#section-two {
+    background-color: var(--color-bg2);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#section-two h2 {
+    padding-top: 5vh;
+    font-size: 2rem;
+}
+
+#section-two .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 9vh;
+    padding-bottom: 14vh;
+}
+
+#section-two img {
+    border: 2px solid var(--color-primary);
+    width: 25vh;
+    height: 25vh;
+}
+
+#section-two .col {
+    padding: 0 6vh;
+}
+
+/* Section-two end */
+
+/* Footer start */
+
+footer {
+    height: auto;
+    display: flex;
+    background-color: var(--color-bg3);
+    color: var(--color-text);
+    padding: 3vh 15vh;
+    font-size: 0.8rem;
+}
+
+footer .copyright,
+footer .contact {
+    display: flex;
+    justify-content: end;   
+}
+
+footer .copyright {
+    width: 60%;
+    margin-right: 9vh;
+}
+
+footer .contact {
+    width: 40%;
+}
+
+footer .contact ul {
+    display: flex;
+}
+
+footer .contact ul li {
+    width: 16vh;
+}
+
+footer .contact ul li a {
+    color: var(--color-text);  
+}
+
+/* Footer end */
+
+@media (min-width: 800px) {
  nav{
     transform: scale(1);
     position: relative;
