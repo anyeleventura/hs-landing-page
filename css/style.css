@@ -1,0 +1,187 @@
+:root {
+    --color-primary: #e9a52f;
+    --color-primary-dark: #ba8426;
+    --btn-background: #0b0b0b;
+    --color-bg1: #f2f5f9;
+    --color-bg2: #dadde0;
+    --color-bg3: #c2c4c7;
+    --color-title: #0b0b0b;
+    --color-text: #3c3c3c;
+    --border: 1px solid #a9acae;
+    --color-border: #a9acae;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    line-height: 1.5;  
+}
+
+@font-face{
+    font-family: 'outline';
+    src: url(/font/KnockyOutlineSemibold.otf);
+    font-weight: normal;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: var(--color-bg1);
+}
+
+/* Header start */
+
+header{
+    padding: 10px 7vw;    
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-bg3);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 10;
+}
+
+#open-nav,
+#close-nav{
+    display: none;
+}
+
+#open-nav:checked ~ .nav-x{
+    display: flex;
+}
+
+#open-nav:checked ~ nav{
+   transform: scale(1);
+}
+
+#close-nav:checked ~ .nav-bar{
+    display: flex;
+}
+
+.logo{
+    font-family: outline; 
+    color: var(--color-primary);
+    background-color: var(--btn-background);
+    font-weight: bold;
+    font-size: 32px;
+    padding: 0 11.11px;
+    border-radius: 50%;  
+    position: relative;
+}
+
+nav{
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    left: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-origin: center top;
+    transform: scale(0);
+    transition: transform 0.5s;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;  
+}
+
+nav ul li{
+    height: 3rem;  
+    width: 100%;
+}
+
+nav ul li a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;   
+    justify-content: center;
+    color: var(--color-text);
+    transition: background-color 0.5s, color 0.5s;
+}
+
+nav ul li a:hover{
+    background-color: var(--btn-background);
+    color: var(--color-primary);
+}
+
+nav ul li:not(.header-nav ul li:last-child) {
+    border-bottom: var(--border);
+} 
+
+.agendar-desktop{
+    display: none;
+}
+
+.nav-bar,
+.nav-x{
+    display: none;    
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    width: calc(20px + 14px*2);
+}
+
+.agendar-mobile{
+    position: absolute;
+    right: 30px;
+    bottom: -800%;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(24px + 12px*2); 
+    height: calc(24px + 12px*2); 
+    background-color: var(--btn-background); 
+    border-radius: 50%;   
+    opacity: 0.5;
+    transition: opacity 0.5s;
+}
+
+.agendar-mobile:hover{
+    opacity: 1;  
+}
+
+.agendar-mobile svg{
+    font-size: 24px;
+    display: flex;    
+    fill: var(--color-primary);  
+}
+
+/* Header end */
+
+@media (min-width:800px) {
+ nav{
+    transform: scale(1);
+    position: relative;
+ }
+
+ nav ul{
+    flex-direction: row;
+    gap: 1rem;
+ }
+
+ nav ul li a{
+    padding: 0 0.5rem;
+    border-radius: 0.25rem;
+ }
+
+ .nav-bar,
+ .nav-x{
+    display: none !important;
+ }
+
+ nav ul li:not(.header-nav ul li:last-child){
+    border-bottom: none;
+ }
+}
