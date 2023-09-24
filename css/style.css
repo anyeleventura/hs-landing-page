@@ -212,9 +212,9 @@ main {
     transition: background-color 0.5s, color 0.5s;
 }
 
-.home-txt a:hover {
-    background-color: var(--color-bg3);
-    color: #000;
+.home-txt a:hover{
+    background-color: var(--color-primary);
+    color: var(--btn-background);
 }
 
 .home-img {
@@ -264,18 +264,9 @@ main {
     overflow: hidden;
     display: flex !important;
     flex-direction: column;
+    align-items: center;
     gap: 0.5rem;
     padding-bottom: 1rem;
-}
-
-.corteNome{
-    color: var(--color-title);
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
-.serviços-item p:nth-of-type(2){
-    color: var(--color-text);
 }
 
 .serviços-img {
@@ -289,9 +280,44 @@ main {
     display: block;
 }
 
+.corteNome{
+    color: var(--color-title);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.serviços-item p:nth-of-type(2){
+    color: var(--color-text);
+}
+
+.agendar-serviço{
+    background-color: var(--btn-background);
+    color: var(--color-primary);
+    border-radius: 0.25rem;
+    padding: 0.75rem 2rem;
+   transition: background-color 0.5s, color 0.5s;
+}
+
+.agendar-serviço:hover{
+    background-color: var(--color-primary);
+    color: var(--btn-background);
+}
+
 .no-js .swiper-button-next,
 .no-js .swiper-button-prev{
     display: none;
+}
+
+.js .swiper-button-next::after,
+.js .swiper-button-prev::after{
+    color: var(--color-primary);
+    padding: 2px 13px;
+    transition: transform 0.5s;
+}
+
+.js .swiper-button-next:hover::after,
+.js .swiper-button-prev:hover::after{  
+    transform: scale(1.2);
 }
 
 /* serviços end */
