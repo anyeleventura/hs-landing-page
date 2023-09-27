@@ -181,7 +181,7 @@ main {
     position: relative;    
 }
 
-.home-txt {
+#home .home-txt {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -190,19 +190,19 @@ main {
     z-index: 2;
 }
 
-.home-txt h1 {
+#home .home-txt h1 {
     font-size: calc(2.5rem + 2vw);
     color: var(--color-primary);
     font-family: outline;
 }
 
-.home-txt h1 span {
+#home .home-txt h1 span {
     font-size: calc(2rem + 2vw);
     color: var(--color-primary);
     font-family: outline;
 }
 
-.home-txt a {
+#home .home-txt a {
     padding: 0.65rem 2rem;
     background-color: var(--btn-background);
     color: var(--color-primary);
@@ -212,17 +212,17 @@ main {
     transition: background-color 0.5s, color 0.5s;
 }
 
-.home-txt a:hover {
+#home .home-txt a:hover {
     background-color: var(--color-primary);
     color: var(--btn-background);
 }
 
-.home-img {
+#home .home-img {
     width: 100%;
     height: 100%;
 }
 
-.home-img img {
+#home .home-img img {
     width: 100%;
     height: 100%;
     filter: brightness(0.3);

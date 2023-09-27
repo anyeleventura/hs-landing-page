@@ -1,0 +1,242 @@
+#section-notes {
+    padding-top: 11vh;
+    width: 100%;
+    background-color: var(--color-bg1);
+}
+
+#section-notes .btn_return {
+    border-bottom: 1px solid var(--color-border);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#section-notes .btn_return a {
+    width: 50%;
+    display: flex;
+    padding-bottom: 2vh;
+    color: var(--color-title);
+}
+
+#section-notes .btn_return span {
+    font-weight: 600;
+    margin-right: 1vh;
+}
+
+#section-notes #info,
+#section-notes #step_one,
+#section-notes #step_two,
+#section-notes #step_three {
+    padding-top: 5vh;
+    height: 70vh;
+}
+
+#section-notes #info form {
+        margin: 3vh 1vh 0;
+        display: flex;
+        flex-direction: column;
+}
+
+#section-notes #info form input{
+    width: 100%;
+    padding: 0.8vh;
+    margin: 1.5vh 0;
+    border-radius: 1vh;
+    border: var(--border);
+}
+
+#section-notes #info form .btn_next {
+    margin-top: 8vh;
+}
+
+#section-notes .btn_next {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+#section-notes .btn_next button {
+    background-color: var(--btn-background);
+    border: 1px solid var(--color-primary);
+    color: #fff;
+    font-size: 1rem;
+    padding: 1vh;
+    border-radius: 1vh;
+    transition: background-color 0.2s, color 0.2s;
+    cursor: pointer;
+}
+
+#section-notes .btn_next button:not([disabled]):hover {
+    background-color: var(--color-primary);
+    color: var(--btn-background);
+    border: 1px solid var(--btn-background);
+}
+
+#section-notes .btn_next button:disabled {
+    background-color: var(--color-text);
+    border: 1px solid var(--btn-background);
+    cursor: auto;
+}
+
+#section-notes #step_one .container{
+    margin-bottom: 12vh;
+}
+
+#section-notes #step_one .selection {
+    padding: 4vh 1vh 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#section-notes #step_one .selection label {
+    padding-bottom: 1vh;
+}
+
+#section-notes #step_one .selection select {
+    padding: 1.2vh;
+    border: var(--border);
+    cursor: pointer;
+}
+
+#section-notes #step_two .container {
+    margin-bottom: 8vh;
+}
+
+#section-notes #step_two .container .days,
+#section-notes #step_two .container .hours {
+    padding: 4vh 1vh 0;
+}
+
+#section-notes #step_two .container h5 {
+    font-size: 0.9rem;
+}
+
+#section-notes #step_two .container button {
+    margin: 2vh 0 0 2vh;
+    background-color: #fff;
+    color: var(--btn-background);
+    border-radius: 1vh;
+    padding: 1vh;
+    border: 2px solid var(--color-primary-dark);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+#section-notes #step_two .container button:hover,
+#section-notes #step_two .container .active {
+    background-color: var(--btn-background);
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    font-weight: 600;
+}
+
+#section-notes #step_three > p {
+    margin-bottom: 9vh;
+}
+
+#section-notes #step_three span {
+    font-size: 2rem;
+    color: #02890d;
+}
+
+#section-notes #step_three .alert {
+    display: flex;
+    margin: 4vh 0 6vh;
+    gap: 1vh;
+}
+
+#section-notes #step_three .alert p {
+    font-size: 1rem;
+}
+
+#section-notes #step_three .btn_next a{
+    color: #fff;
+}
+
+#section-notes #step_three .btn_next a:hover {
+    color: var(--btn-background);
+}
+
+footer {
+    margin-top: 1.5vh;
+    box-shadow: 2vh 1vh 10vh 5vh var(--color-bg2);
+}
+
+@media (min-width: 800px) {
+    body {
+        background-color: var(--color-bg2);
+    }
+
+    #section-notes {
+        margin: 12vh 2vh 0;
+        padding: 3vh 3vh;
+        width: 50%;
+        border-radius: 2vh;
+        box-shadow: 1vh 1vh 2vh var(--color-border);
+    }
+
+    #section-notes .btn_return a {
+        width: 25%;
+        gap: 1vh;
+    }
+
+    #section-notes #info,
+    #section-notes #step_one,
+    #section-notes #step_two,
+    #section-notes #step_three {
+        height: 64vh;
+    }
+
+    #section-notes #info form input{
+        width: 35%;
+    }
+    
+    #section-notes #info form .btn_next {
+        margin-top: 13vh;
+    }
+
+    #section-notes #step_one .container{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 22vh;
+    }
+
+    #section-notes #step_one .selection {
+        padding: 5vh 1vh 0;
+        width: 35%;
+    }
+
+    #section-notes #step_one .selection label {
+        padding-bottom: 0.3vh;
+    }
+
+    #section-notes #step_one .selection select {
+        padding: 0.6vh;
+    }
+
+    #section-notes .btn_next button {
+        width: 15%;
+        padding: 0.5vh;
+    }
+
+    #section-notes #step_two .container {
+        margin-bottom: 11.6vh;
+    }
+
+    #section-notes #step_three > p {
+        margin-bottom: 15vh;
+    }
+   
+    #section-notes #step_three .alert {
+        margin: 5vh 0 8vh;
+    }
+
+    #section-notes #step_three .alert p {
+        margin-top: 4px;
+    }
+    footer {
+        box-shadow: 1vh 1vh 15vh 0.5vh #fff;
+        margin-top: 3vh;
+    }
+}
